@@ -1,0 +1,187 @@
+
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: #FFA500;
+        font-family: Brush Script MT;
+        color: #005248;
+    }
+
+    #nav {
+        background-color: #FFA500;
+        z-index: 2;
+    }
+
+    #monMenu {
+        position: absolute;
+        left: 30%;
+    }
+
+    #coteCarte {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        right: 5%;
+        width: 400px;
+    }
+
+    #cartButton {
+        border-radius: 5px;
+        cursor: pointer;
+        position: relative;
+        top: 10px;
+    }
+
+    #block1 {
+        background: url('https://images.pexels.com/photos/890570/pexels-photo-890570.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500') no-repeat;
+        background-size: cover;
+        height: calc(100vh - 63px);
+        width: 100%;
+    }
+
+    #explorer {
+
+        font-family: Brush Script MT;
+    }
+
+    .btn,
+    #recherche {
+        background-color: #C3FCF1;
+    }
+
+    .btn {
+        color: black;
+    }
+
+    #about {
+        font-size: 1.3rem;
+        height: 500px;
+        margin: auto;
+    }
+
+    #imgCarre {
+        width: 300px;
+        height: 300px;
+    }
+
+    #carre {
+        transition: all 1s ease;
+    }
+
+    #carre:hover {
+        transition: all 1s ease;
+    }
+
+    #ensembleButtons {
+
+        max-width: 500px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    #recherche {
+        width: 50px;
+        color: black;
+        padding-left: 10px;
+        margin-left: -14px;
+        height: 50px;
+        border-radius: 30px;
+        cursor: pointer;
+    }
+
+    .recherche {
+        height: 50px;
+        max-width: 500px;
+        margin: auto;
+        border-radius: 30px;
+    }
+
+    .card-action{
+        display: flex;
+        justify-content: space-between;
+        z-index: 10;
+        margin: -10px;
+        height: 70px;
+        margin-top: -36px;
+    }
+
+
+    
+    .card-image img{
+        transition: all 500ms ease;
+    }
+    /* .card-image img:hover{
+        transform: scale(1.5);
+        transition: all 500ms ease;
+    } */
+
+    .panier1,.panier2,.panier3,.panier4,.panier5,.panier6,.panier7,.panier8,.panier9,.panier10,.panier11,.panier12{
+        position: absolute;
+        top: 165px;
+        right: -50px;
+        transition: all 500ms ease;
+        /* transform: translate(px); */
+    }
+
+    .card{
+        overflow: hidden;
+        position: relative;
+        width: 300px;
+    }
+
+    .poubelle{
+        color: #C3FCF1;
+        cursor: pointer;
+    }
+
+    #total{
+        font-size: 1.5rem
+    }
+
+    #cart{
+        width: 250px;
+        position: absolute;
+        top: 70px;
+        border-bottom-left-radius: 30px; 
+        border-top-left-radius: 50px; 
+        background-color: #ffa600a1; 
+        right: -250px;
+        top: -170px; 
+        box-shadow: inset 7px 5px 2px,
+                    inset 0px -5px 2px;
+        transition: all 500ms ease;
+    }
+
+    .cartBuy{
+        display: flex; justify-content: space-around; height: 50px; margin: 5px;
+    }
+    .cartBuyImgC{
+       width: 50px; 
+       height: 50px; 
+       border-radius: 50%; 
+       overflow: hidden;
+    }
+    .cartBuyImg{
+        max-width: 100%; height: 100%;
+    }
+
+    .pousser{
+        transform: translate(-250px, 250px);
+        transition: all 500ms ease;
+    }
+    .enBasHaut{
+        animation-name: enBasHaut;
+        animation-duration: 5000ms;
+    }
+    #added{
+        /* animation-name: enBasHaut;
+        animation-duration: 1000ms; */
+        transition: all 800ms ease;
+    }
+
+    
+    
