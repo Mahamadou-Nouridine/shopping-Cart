@@ -2,390 +2,389 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="materialize.min.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Shopping cart</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="materialize.min.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Shopping cart</title>
 </head>
 
 <body style="width: 100vw;">
-    
 
 
-    <nav id="nav">
-        <div class="nav-wrapper">
-            <a href="#!" class="brand-logo"><img src="pngwing.com.png" width="65" alt=""></a>
-            <ul id="monMenu" class=" hide-on-med-and-down">
-                <li><a href="#" style="color: #005248;; font-size: 2rem; font-family: Brush Script MT;">Store</a></li>
-                <li><a href="#" style="color: #005248;; font-size: 2rem">About</a></li>
-                <li><a href="#" style="color: #005248;;font-size: 2rem">Store</a></li>
-            </ul>
+
+  <nav id="nav">
+    <div class="nav-wrapper">
+      <a href="#!" class="brand-logo"><img src="pngwing.com.png" width="65" alt=""></a>
+      <ul id="monMenu" class=" hide-on-med-and-down">
+        <li><a href="#" style="color: #005248;; font-size: 2rem; font-family: Brush Script MT;">Store</a></li>
+        <li><a href="#" style="color: #005248;; font-size: 2rem">About</a></li>
+        <li><a href="#" style="color: #005248;;font-size: 2rem">Store</a></li>
+      </ul>
 
 
-            <div id="coteCarte" class=" hide-on-med-and-down">
-                <h6 style="color: #005248;;"><span class="material-icons">phone_enabled</span> +227 98 45 38 20</h6>
-                <div id="cartButton" class="btn"><span class="material-icons">shopping_cart</span> <span id="butItemNum"
-                        style="position: relative; bottom: 5px; font-size: 1.3rem;">2 </span
-                        style="position: relative; bottom: 5px;"><span
-                        style="position: relative; bottom: 5px;"> items-$</span><span id="butTotal"
-                        style="position: relative; bottom: 5px;">7</span></div>
-            </div>
+      <div id="coteCarte" class=" hide-on-med-and-down">
+        <h6 style="color: #005248;;"><span class="material-icons">phone_enabled</span> +227 98 45 38 20</h6>
+        <div id="cartButton" class="btn"><span class="material-icons">shopping_cart</span> <span id="butItemNum"
+            style="position: relative; bottom: 5px; font-size: 1.3rem;">2 </span
+            style="position: relative; bottom: 5px;"><span style="position: relative; bottom: 5px;"> items-$</span><span
+            id="butTotal" style="position: relative; bottom: 5px;">0</span></div>
+      </div>
 
 
-            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
-                    style="color: #3E9A4C">menu</i></a>
-        </div>
-    </nav>
-    <div class="" id="added" style="width: 150px; height: 50px; font-size: 2rem; position: fixed; top: -50px;left: 45%; border-radius: 20px;z-index: 10000; background-color: #C3FCF1; padding: auto; ">
-        <p style="text-align: center;">ADDED!</p>
-        
+      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons"
+          style="color: #3E9A4C">menu</i></a>
+    </div>
+  </nav>
+  <div class="" id="added"
+    style="width: 150px; height: 50px; font-size: 2rem; position: fixed; top: -50px;left: 45%; border-radius: 20px;z-index: 1000000; background-color: #C3FCF1; padding: auto; ">
+    <p style="text-align: center;">ADDED!</p>
+
+  </div>
+
+
+  <div class="" id="cart">
+    <div id="listCart">
+
+
     </div>
 
-
-    <div class=""  id="cart" > 
-        <div id="listCart">
-            <div id=""  class="valign-wrapper cartBuy commande"  >
-                <div class="cartBuyImgC"><img class="cartBuyImg"  src="https://images.pexels.com/photos/672101/pexels-photo-672101.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500
-                    " alt="">
-                </div>
-                <div class="center cartBuyName"><span id="nom">pomme</span><br><span id="prix">$7</span></div>
-                <div class="cartBuyTrash"><span  class="material-icons poubelle">
-                    delete
-                    </span></div>
-            </div>
-
-        </div>
-        
-        <div class="valign-wrapper"  style=" display: flex; justify-content: space-around; height: 50px; margin: 5px;">
-            <div style="font-size: 1.5rem; ">Total</div>
-            <div id="total">$7</div>
-        </div>
-        <div  class="valign-wrapper"  style=" display: flex; justify-content: space-around; height: 50px; margin: 5px;">
-            <div id="clearCart" style="border-radius: 20px;" class="btn">Clear cart</div>
-            <div style="color: red; background-color: transparent; border: 1px solid  #C3FCF1;font-size: 1.2rem; border-radius: 20px;" class="btn" >Checout</div>
-        </div>
+    <div class="valign-wrapper" style=" display: flex; justify-content: space-around; height: 50px; margin: 5px;">
+      <div style="font-size: 1.5rem; ">Total</div>
+      <div id="total">$0</div>
     </div>
+    <div class="valign-wrapper" style=" display: flex; justify-content: space-around; height: 50px; margin: 5px;">
+      <div id="clearCart" style="border-radius: 20px;" class="btn">Clear cart</div>
+      <div
+        style="color: red; background-color: transparent; border: 1px solid  #C3FCF1;font-size: 1.2rem; border-radius: 20px;"
+        class="btn">Checout</div>
+    </div>
+  </div>
 
-    <script>
+  <script>
 
 
     // 
 
 
-    </script>
+  </script>
 
-    <ul class="sidenav" id="mobile-demo">
-        <li><a href="#" style="color: #005248;; font-size: 2rem;">Store</a></li>
-        <li><a href="#" style="color: #005248;; font-size: 2rem">About</a></li>
-        <li><a href="#" style="color: #005248;;font-size: 2rem">Store</a></li>
-    </ul>
-
-
+  <ul class="sidenav" id="mobile-demo">
+    <li><a href="#" style="color: #005248;; font-size: 2rem;">Store</a></li>
+    <li><a href="#" style="color: #005248;; font-size: 2rem">About</a></li>
+    <li><a href="#" style="color: #005248;;font-size: 2rem">Store</a></li>
+  </ul>
 
 
-    <div class="valign-wrapper center-align" id="block1">
-        <div style="margin: auto;" class="center">
-            <h2>Bienvenu à Fruitzy</h2>
-            <button style="border-radius: 20px;" id="explorer" class="btn">Explorer</button>
+
+
+  <div class="valign-wrapper center-align" id="block1">
+    <div style="margin: auto;" class="center">
+      <h2>Bienvenu à Fruitzy</h2>
+      <button style="border-radius: 20px;" id="explorer" class="btn">Explorer</button>
+    </div>
+  </div>
+
+  <div id="about" class="container valign-wrapper">
+    <div style="margin: auto;" class="row">
+      <div class="col s12 m8">
+        <h4>About Us</h4><br>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, modi doloremque quod ducimus
+          assumenda repudiandae odio ad atque, cupiditate minima sequi sint debitis consequuntur
+          exercitationem dolor neque facilis, earum sapiente?</p>
+        <button style="margin-bottom: 10px;border-radius: 20px;" id="explorer" class="btn">Explorer</button>
+      </div>
+      <div class="col s12 m4 " style="padding: auto;">
+        <div id="imgCarre">
+          <img id="imgCarre1" style="width: 100%; "
+            src="https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+            alt="">
+          <img id="carre"
+            style="width: 333px;height: 340px; position: relative; bottom:290px; right: 18px; z-index: -1;"
+            src="images/carre.png" alt="">
         </div>
+      </div>
     </div>
 
-    <div id="about" class="container valign-wrapper">
-        <div style="margin: auto;" class="row">
-            <div class="col s12 m8">
-                <h4>About Us</h4><br>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, modi doloremque quod ducimus
-                    assumenda repudiandae odio ad atque, cupiditate minima sequi sint debitis consequuntur
-                    exercitationem dolor neque facilis, earum sapiente?</p>
-                <button style="margin-bottom: 10px;border-radius: 20px;" id="explorer" class="btn">Explorer</button>
-            </div>
-            <div class="col s12 m4 " style="padding: auto;">
-                <div id="imgCarre">
-                    <img id="imgCarre1" style="width: 100%; "
-                        src="https://images.pexels.com/photos/1132047/pexels-photo-1132047.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
-                        alt="">
-                    <img id="carre"
-                        style="width: 333px;height: 340px; position: relative; bottom:290px; right: 18px; z-index: -1;"
-                        src="images/carre.png" alt="">
-                </div>
-            </div>
-        </div>
+  </div>
+  <div class="container center" id="ourStore">
+    <h4>Our Store</h4>
+    <div class="row" id="ensembleButtons">
+      <div>
+        <div style="border-radius: 20px;" class="btn">ALL</div>
+      </div>
+      <div>
+        <div style="border-radius: 20px;" class="btn">ORANGE</div>
+      </div>
+      <div>
+        <div style="border-radius: 20px;" class="btn">STRAWBERRY</div>
+      </div>
+      <div>
+        <div style="border-radius: 20px;" class="btn">CRAMBERRY</div>
+      </div>
+      <div>
+        <div style="border-radius: 20px;" class="btn">APPLE</div>
+      </div>
 
     </div>
-    <div class="container center" id="ourStore">
-        <h4>Our Store</h4>
-        <div class="row" id="ensembleButtons">
-            <div>
-                <div style="border-radius: 20px;" class="btn">ALL</div>
-            </div>
-            <div>
-                <div style="border-radius: 20px;"  class="btn">ORANGE</div>
-            </div>
-            <div>
-                <div style="border-radius: 20px;"  class="btn">STRAWBERRY</div>
-            </div>
-            <div>
-                <div style="border-radius: 20px;"  class="btn">CRAMBERRY</div>
-            </div>
-            <div>
-                <div style="border-radius: 20px;"  class="btn">APPLE</div>
-            </div>
 
-        </div>
-
-        <nav class="recherche">
-            <div style="border-radius:30px" class="nav-wrapper white">
-                <form>
-                    <div style="border-radius:30px" class="input-field">
-                        <input style="border-radius:30px" id="search" type="search" required>
-                        <label class="label-icon" for="search"><i class="material-icons "
-                                id="recherche">search</i></label>
-                        <i class="material-icons">close</i>
-                    </div>
-                </form>
-            </div>
-        </nav>
+    <nav class="recherche">
+      <div style="border-radius:30px" class="nav-wrapper white">
+        <form>
+          <div style="border-radius:30px" class="input-field">
+            <input style="border-radius:30px" id="search" type="search" required>
+            <label class="label-icon" for="search"><i class="material-icons " id="recherche">search</i></label>
+            <i class="material-icons">close</i>
+          </div>
+        </form>
+      </div>
+    </nav>
 
 
-        <div style="max-width: 1000px;  display: flex; flex-wrap: wrap; justify-content: center; " class="row ">
-            <div class="col ">
-              <div class="card" >
-                <div class="card-image">
-                  <img id="cardImg1" src="https://images.pexels.com/photos/6102649/pexels-photo-6102649.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                  <p>Fruit 1</p>
-                  <p>$<span id="prix1">5</span></p>
-                  
-                </div>
-                <div class="btn panier1" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg2" src="https://images.pexels.com/photos/672101/pexels-photo-672101.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 2</p>
-                    <p>$<span id="prix2">7</span></p>
-                  
-                </div>
-                <div class="btn panier2" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg3" src="https://images.pexels.com/photos/760281/pexels-photo-760281.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 3</p>
-                    <p>$<span id="prix3">10</span></p>
-                  
-                </div>
-                <div class="btn panier3" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg4" src="https://images.pexels.com/photos/1105166/pexels-photo-1105166.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 4</p>
-                    <p>$<span id="prix4">17</span></p>
-                  
-                </div>
-                <div class="btn panier4" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg5" src="https://images.pexels.com/photos/1153655/pexels-photo-1153655.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 5</p>
-                    <p>$<span id="prix5">9</span></p>
-                  
-                </div>
-                <div class="btn panier5" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg6" src="https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 6</p>
-                    <p>$<span id="prix6">11</span></p>
-                  
-                </div>
-                <div class="btn panier6" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg7" src="https://images.pexels.com/photos/1320998/pexels-photo-1320998.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 7</p>
-                    <p>$<span id="prix7">5</span></p>
-                  
-                </div>
-                <div class="btn panier7" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg8" src="https://images.pexels.com/photos/1132040/pexels-photo-1132040.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 8</p>
-                    <p>$<span id="prix8">18</span></p>
-                  
-                </div>
-                <div class="btn panier8" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg9" src="https://images.pexels.com/photos/952360/pexels-photo-952360.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 9</p>
-                    <p>$<span id="prix9">5</span></p>
-                  
-                </div>
-                <div class="btn panier9" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg10" src="https://images.pexels.com/photos/616412/pexels-photo-616412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 10</p>
-                    <p>$<span id="prix10">20</span></p>
-                  
-                </div>
-                <div class="btn panier10" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg11" src="https://images.pexels.com/photos/1178610/pexels-photo-1178610.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 11</p>
-                    <p>$<span id="prix11">15</span></p>
-                  
-                </div>
-                <div class="btn panier11" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
-            <div class="col ">
-              <div class="card">
-                <div class="card-image">
-                  <img id="cardImg12" src="https://images.pexels.com/photos/1414126/pexels-photo-1414126.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
-                  
-                  
-                </div>
-                
-                <div style="font-size: 1.3rem;" class="card-action">
-                    <p>Fruit 12</p>
-                    <p>$<span id="prix12">10</span></p>
-                  
-                </div>
-                <div class="btn panier12" style="border-top-left-radius: 15px;"  >
-                    <i class="material-icons">shopping_cart</i>
-                </div>
-              </div>
-            </div>
+    <div style="max-width: 1000px;  display: flex; flex-wrap: wrap; justify-content: center; " class="row ">
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg1"
+              src="https://images.pexels.com/photos/6102649/pexels-photo-6102649.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
           </div>
 
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 1</p>
+            <p>$<span id="prix1">5</span></p>
+
+          </div>
+          <div class="btn panier1" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg2"
+              src="https://images.pexels.com/photos/672101/pexels-photo-672101.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 2</p>
+            <p>$<span id="prix2">7</span></p>
+
+          </div>
+          <div class="btn panier2" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg3"
+              src="https://images.pexels.com/photos/760281/pexels-photo-760281.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 3</p>
+            <p>$<span id="prix3">10</span></p>
+
+          </div>
+          <div class="btn panier3" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg4"
+              src="https://images.pexels.com/photos/1105166/pexels-photo-1105166.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 4</p>
+            <p>$<span id="prix4">17</span></p>
+
+          </div>
+          <div class="btn panier4" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg5"
+              src="https://images.pexels.com/photos/1153655/pexels-photo-1153655.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 5</p>
+            <p>$<span id="prix5">9</span></p>
+
+          </div>
+          <div class="btn panier5" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg6"
+              src="https://images.pexels.com/photos/61127/pexels-photo-61127.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 6</p>
+            <p>$<span id="prix6">11</span></p>
+
+          </div>
+          <div class="btn panier6" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg7"
+              src="https://images.pexels.com/photos/1320998/pexels-photo-1320998.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 7</p>
+            <p>$<span id="prix7">5</span></p>
+
+          </div>
+          <div class="btn panier7" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg8"
+              src="https://images.pexels.com/photos/1132040/pexels-photo-1132040.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 8</p>
+            <p>$<span id="prix8">18</span></p>
+
+          </div>
+          <div class="btn panier8" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg9"
+              src="https://images.pexels.com/photos/952360/pexels-photo-952360.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 9</p>
+            <p>$<span id="prix9">5</span></p>
+
+          </div>
+          <div class="btn panier9" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg10"
+              src="https://images.pexels.com/photos/616412/pexels-photo-616412.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 10</p>
+            <p>$<span id="prix10">20</span></p>
+
+          </div>
+          <div class="btn panier10" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg11"
+              src="https://images.pexels.com/photos/1178610/pexels-photo-1178610.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 11</p>
+            <p>$<span id="prix11">15</span></p>
+
+          </div>
+          <div class="btn panier11" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
+      <div class="col ">
+        <div class="card">
+          <div class="card-image">
+            <img id="cardImg12"
+              src="https://images.pexels.com/photos/1414126/pexels-photo-1414126.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+
+
+          </div>
+
+          <div style="font-size: 1.3rem;" class="card-action">
+            <p>Fruit 12</p>
+            <p>$<span id="prix12">10</span></p>
+
+          </div>
+          <div class="btn panier12" style="border-top-left-radius: 15px;">
+            <i class="material-icons">shopping_cart</i>
+          </div>
+        </div>
+      </div>
     </div>
+
+  </div>
 
 
 </body>
-
-<script>
-    
-</script>
-<script src="dpot.js"></script>
-
 <script src="script.js"></script>
 <script src="materialize.min.js"></script>
 <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        var elems = document.querySelectorAll('.sidenav');
-        var instances = M.Sidenav.init(elems)
-    });
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.sidenav');
+    var instances = M.Sidenav.init(elems)
+  });
 </script>
 
 </html>
